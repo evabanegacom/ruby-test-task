@@ -7,7 +7,7 @@ RSpec.describe PostSerializer do
   subject { described_class.new(post) }
 
   let(:post) do
-    Post.new(1, "2020 is the year of Ruby!", Date.new(2020, 1, 1))
+    Post.new(1, "2020 is the year of Ruby!", DateTime.new(2020, 1, 1).strftime("%m-%d-%Y"))
   end
 
   it "serializes object" do
