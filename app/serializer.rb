@@ -9,4 +9,6 @@ class Serializer
         result.compact
       end
     end
+
+    def self.attribute(key) end;
 end
